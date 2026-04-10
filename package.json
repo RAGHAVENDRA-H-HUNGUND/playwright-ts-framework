@@ -8,7 +8,11 @@
     "import": "./index.js",
     "require": "./index.cjs"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "show-report": "npx playwright show-report"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
