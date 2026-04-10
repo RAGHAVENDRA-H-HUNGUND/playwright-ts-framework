@@ -1,0 +1,24 @@
+{
+  "name": "playwrightframeworkwithts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    "import": "./index.js",
+    "require": "./index.cjs"
+  },
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.12.2",
+    "playwright": "^1.55.0",
+    "typescript": "^5.9.2"
+  },
+  "schemaStore": {
+    "enable": false
+  }
+}
