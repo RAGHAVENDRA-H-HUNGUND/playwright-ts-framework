@@ -3,9 +3,10 @@ import { employeeDetails, employeeWithCredentialsDetails } from '../../test-data
 
 
 test.describe('PIM Page Tests', () => {
-  test('Add Employee without Login Details', async ({ pimPage, page }) => {
+  test('Add Employee without Login Details', async ({ homePage, pimPage, page }) => {
+    await homePage.navigateToPIM();
     await expect(page).toHaveURL(/pim/, { timeout: 10000 });
-    
+    await pimPage.addEmployee.click();
     await pimPage.saveEmployeeDetails(employeeDetails.firstName, employeeDetails.middleName, employeeDetails.lastName);
     await pimPage.saveBtn.click();
   });
