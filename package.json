@@ -23,6 +23,6 @@
     "typescript": "^5.9.2"
   },
   "schemaStore": {
-    "enable": false
+    "enable": true
   }
 }
